@@ -1,0 +1,39 @@
+   /* 라이브러리 */
+.border-red {
+  border: 5px solid red;
+}
+.border-blue {
+  border: 5px solid blue;
+ }
+.border-black {
+  border: 5px solid #000;
+}
+.border-green {
+  border: 5px solid green;
+}
+.flex {
+  display: flex;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+.flex-grow-1 {
+   flex-grow: 1;
+}
+.block {
+  display: block;
+}
+  .height-100p {
+    height: 100%;
+  }
+  .con {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-box > img {
+    width: 100%;
+    display: block;
+  }

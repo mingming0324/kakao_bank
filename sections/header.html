@@ -4,10 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kakao-bank 모작</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
 </head>
 <body>
-  
+  <header class="con_min_width">
+    <div class="con border-blue flex">
+
+      <div class="border-red">
+        <a href="#"><img src="../images/logo_black.svg" alt="logo"></a>
+      </div>
+
+      <div class="flex-grow-1 border-black"></div>
+
+      <nav class="menu-box border-red">
+        <ul>
+          <li><a href="#">은행소개</a></li>
+          <li><a href="#">IR투자정보</a></li>
+          <li><a href="#">상품안내</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+
+      <div class="border-red">
+        <a href="#">관련 사이트</a>
+      </div>
+    </div>
+  </header>
+
+  <style>
+    /* 노말라이즈 */
+    body, ul ,li  {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* 노말라이즈 끝 */
+    /* 라이브러리 */
+    .border-red {
+      border: 5px solid red;
+    }
+    .border-blue {
+      border: 5px solid blue;
+    }
+    .border-black {
+      border: 5px solid #000;
+    }
+    .border-green {
+      border: 5px solid green;
+    }
+
+    .flex {
+      display: flex;
+    }
+    .flex-jc-c {
+      justify-content: center;
+    }
+    .flex-ai-c {
+      align-items: center;
+    }
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+    .block {
+      display: block;
+    }
+    .height-100p {
+      height: 100%;
+    }
+    .con {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .img-box > img {
+      width: 100%;
+      display: block;
+    }
+
+    /* 커스텀 */
+    .con-min-width {
+      min-width: 1080px;
+    }
+    .con {
+      width: 1080px;
+    }
+  </style>
 </body>
 </html>

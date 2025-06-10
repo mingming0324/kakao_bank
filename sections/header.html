@@ -4,30 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kakao-bank 모작</title>
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
   <script src="../script.js" defer></script>
 </head>
 <body>
   <header class="con_min_width">
-    <div class="con border-blue flex">
+    <div class="con flex height-100p">
 
-      <div class="border-red">
+      <div class="logo-wrap flex-as-c">
         <a href="#"><img src="../images/logo_black.svg" alt="logo"></a>
       </div>
 
-      <div class="flex-grow-1 border-black"></div>
+      <div class="flex-grow-1"></div>
 
-      <nav class="menu-box border-red">
-        <ul>
-          <li><a href="#">은행소개</a></li>
-          <li><a href="#">IR투자정보</a></li>
-          <li><a href="#">상품안내</a></li>
-          <li><a href="#">고객센터</a></li>
+      <nav class="menu-box">
+        <ul class="flex height-100p border-black">
+          <li><a href="#" class="flex flex-ai-c height-100p">IR투자정보</a></li>
+          <li><a href="#" class="flex flex-ai-c height-100p">은행소개</a></li>
+          <li><a href="#" class="flex flex-ai-c height-100p">고객센터</a></li>
+          <li><a href="#" class="flex flex-ai-c height-100p">상품안내</a></li>
         </ul>
       </nav>
 
-      <div class="border-red">
-        <a href="#">관련 사이트</a>
+      <div class="drop-down flex flex-as-c">
+        <button class="drop-btn">
+          <span>관련사이트</span>
+          <span class="ico"><i class="fa-solid fa-angle-down"></i></span>
+        </button>
       </div>
     </div>
   </header>
@@ -67,6 +72,9 @@
     .flex-ai-c {
       align-items: center;
     }
+    .flex-as-c {
+      align-self: center;
+    }
     .flex-grow-1 {
       flex-grow: 1;
     }
@@ -91,7 +99,41 @@
     }
     .con {
       width: 1080px;
+  
     }
+/* --헤더 시작-- */
+    header {
+      height: 80px;
+      background-color: blanchedalmond;
+      font-size: 15px;
+    }
+/* 로고 */
+    header > .logo-wrap > a {
+      width: 116px;
+    }
+
+    header > .logo-wrap > a > img {
+      width: 100%;
+    }
+
+/* 관련 사이트 */
+header .drop-down .drop-btn .ico {
+display: inline-block;
+margin-left: 5px;
+}
+
+header .drop-down .drop-btn {
+  border-radius: 40px;
+  background: rgba(244, 244, 244, 0.8);
+  color: rgba(68, 68, 68, 1);
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  padding: 0 14px 0 18px;
+  margin: 0 28px 0 14px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* --헤더 끝-- */
   </style>
 </body>
 </html>

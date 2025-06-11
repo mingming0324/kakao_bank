@@ -20,9 +20,9 @@
       <div class="flex-grow-1"></div>
 
       <nav class="menu-box">
-        <ul class="flex height-100p border-black">
-          <li><a href="#" class="flex flex-ai-c height-100p">IR투자정보</a></li>
+        <ul class="flex height-100p">
           <li><a href="#" class="flex flex-ai-c height-100p">은행소개</a></li>
+          <li><a href="#" class="flex flex-ai-c height-100p">IR투자정보</a></li>
           <li><a href="#" class="flex flex-ai-c height-100p">고객센터</a></li>
           <li><a href="#" class="flex flex-ai-c height-100p">상품안내</a></li>
         </ul>
@@ -44,6 +44,11 @@
     </div>
   </header>
 
+<main>
+ <div>
+
+ </div>
+</main>
   <style>
     /* 노말라이즈 */
     body, ul ,li  {
@@ -110,9 +115,13 @@
     }
 /* --헤더 시작-- */
     header {
+      width: 100%;
       height: 80px;
-      background-color: blanchedalmond;
       font-size: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
 /* 로고 */
     header > .logo-wrap > a {
@@ -123,6 +132,31 @@
       width: 100%;
     }
 
+  /* 메뉴 */ 
+  header .menu-box > ul > li > a {
+    padding: 0 12px;
+    margin: 0 12px;
+    position: relative;
+  }
+
+  header .menu-box > ul > li:hover > a {
+    text-decoration: underline;
+  }
+
+  header .menu-box > ul > li:hover > a::after {
+    display: block;
+  }
+
+  header .menu-box > ul > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: none;
+  }
 /* 관련 사이트 */
 /* 아이콘 버전 */
 /* header .drop-down .drop-btn .ico {
@@ -152,8 +186,19 @@ header .drop-down .drop-btn {
   font-size: 15px;
   cursor: pointer;
 }
-
-
+/* main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main > div {
+  background-color: #ffef6b;
+  width: 1200px;
+  height: 884px;
+  background: url(../images/main-bg3.png);
+  background-size: 100% 100%;
+   */
+}
 /* --헤더 끝-- */
   </style>
 </body>

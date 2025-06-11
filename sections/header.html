@@ -27,13 +27,20 @@
           <li><a href="#" class="flex flex-ai-c height-100p">상품안내</a></li>
         </ul>
       </nav>
-
-      <div class="drop-down flex flex-as-c">
+<!-- 아이콘 버전 -->
+      <!-- <div class="drop-down flex flex-as-c">
         <button class="drop-btn">
           <span>관련사이트</span>
           <span class="ico"><i class="fa-solid fa-angle-down"></i></span>
         </button>
-      </div>
+      </div> -->
+
+<!-- 이미지 버전 -->
+     <div class="drop-down flex-as-c">
+      <button class="drop-btn">관련사이트</button>
+     </div>
+
+      <span><i class="fa-light fa-globe"></i></spgian>
     </div>
   </header>
 
@@ -117,9 +124,21 @@
     }
 
 /* 관련 사이트 */
-header .drop-down .drop-btn .ico {
+/* 아이콘 버전 */
+/* header .drop-down .drop-btn .ico {
 display: inline-block;
 margin-left: 5px;
+} */
+
+/* 이미지 버전 */
+header .drop-down .drop-btn::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background: url(../images/svg_line_arrow_down.svg);
+  background-size: 12px 12px;
 }
 
 header .drop-down .drop-btn {
@@ -133,6 +152,8 @@ header .drop-down .drop-btn {
   font-size: 15px;
   cursor: pointer;
 }
+
+
 /* --헤더 끝-- */
   </style>
 </body>

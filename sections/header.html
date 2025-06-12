@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kakao-bank 모작</title>
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- 폰트어썸 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="../style.css">
-  <script src="../script.js" defer></script>
+  <link rel="stylesheet" href="./header.css">
+  <script src="./header.js" defer></script>
 </head>
 
 <body>
@@ -36,8 +38,8 @@
                       <li><a href="#" class="block">주주사 소개</a></li>
                       <li><a href="#" class="block">오시는 길</a></li>
                       <li><a href="#" class="block">제휴문의</a></li>
-                      <li><a href="#" class="block">금융기술연구소</a></li>
-                      <li><a href="#" class="block">카카오뱅크 인증서</a></li>
+                      <li><a href="#" class="block" target="_blank">금융기술연구소</a></li>
+                      <li><a href="#" class="block" target="_blank">카카오뱅크 인증서</a></li>
                     </ul>
                   </li>
                   <li>
@@ -54,7 +56,7 @@
                       <li><a href="#" class="block">입찰공고</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="block">인재영입</a></li>
+                  <li><a href="#" class="block" target="_blank">인재영입</a></li>
                 </ul>
               </div>
             </div>
@@ -106,7 +108,7 @@
                     <a href="#" class="block">IR일정</a>
                     <ul>
                       <li><a href="#" class="block">IR행사</a></li>
-                      <li><a href="#" class="block">IR미팅예약</a></li>
+                      <li><a href="#" class="block" target="_blank">IR미팅예약</a></li>
                       <li><a href="#" class="block">주주총회</a></li>
                     </ul>
                   </li>
@@ -283,9 +285,17 @@
       <!-- 이미지 버전 -->
       <div class="drop-down flex-as-c">
         <button class="drop-btn">관련사이트</button>
-      </div>
 
-      <span><i class="fa-light fa-globe"></i></spgian>
+        <div class="drop-down__content">
+          <ul>
+            <li><a href="#" target="_blank"><span>카카오뱅크 AD</span></a></li>
+            <li><a href="#" target="_blank"><span>카카오뱅크 인증서</span></a></li>
+            <li><a href="#" target="_blank"><span>금융기술연구소</span></a></li>
+            <li><a href="#" target="_blank"><span>기술블로그</span></a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </header>
 
@@ -295,199 +305,7 @@
     </div>
   </main>
   <style>
-    /* 노말라이즈 */
-    body,
-    ul,
-    li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* 노말라이즈 끝 */
-    /* 라이브러리 */
-    .border-red {
-      border: 5px solid red;
-    }
-
-    .border-blue {
-      border: 5px solid blue;
-    }
-
-    .border-black {
-      border: 5px solid #000;
-    }
-
-    .border-green {
-      border: 5px solid green;
-    }
-
-    .flex {
-      display: flex;
-    }
-
-    .flex-jc-c {
-      justify-content: center;
-    }
-
-    .flex-ai-c {
-      align-items: center;
-    }
-
-    .flex-as-c {
-      align-self: center;
-    }
-
-    .flex-grow-1 {
-      flex-grow: 1;
-    }
-
-    .block {
-      display: block;
-    }
-
-    .height-100p {
-      height: 100%;
-    }
-
-    .con {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .img-box>img {
-      width: 100%;
-      display: block;
-    }
-
-    /* 커스텀 */
-    .con-min-width {
-      min-width: 1080px;
-    }
-
-    .con {
-      width: 1080px;
-    }
-
-    /* --헤더 시작-- */
-    header {
-      width: 100%;
-      height: 80px;
-      font-size: 15px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
-    }
-
-    /* 로고 */
-    header>.logo-wrap>a {
-      width: 116px;
-    }
-
-    header>.logo-wrap>a>img {
-      width: 100%;
-    }
-
-    /* 메뉴박스 - 1차 메뉴 */
-    header .menu-box>ul>li>a {
-      padding: 0 12px;
-      margin: 0 12px;
-      position: relative;
-    }
-
-    header .menu-box>ul>li:hover>a {
-      text-decoration: underline;
-    }
-
-    header .menu-box>ul>li:hover>a::after {
-      display: block;
-    }
-
-    header .menu-box>ul>li>a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #000;
-      display: none;
-    }
-
-    /* 메뉴박스 - 2차 메뉴 */
-    header .menu-box>ul>li>div {
-      width: 100%;
-      background-color: #fff;
-      top: 100%;
-      position: absolute;
-      left: 0;
-      display: none;
-      padding: 60px 0 36px;
-      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .12);
-    }
-
-    header .menu-box > ul > li:hover > div {
-      display: block;
-    }
-
-header .menu-box .menu-box__sec-menu > ul > li {
-  width: calc(100% / 6);
-  text-align: center;
-}
-
-header .menu-box > ul > li:first-child .menu-box__sec-menu > ul > li {
-  width: calc(100% / 4);
-}
-
-header .menu-box .menu-box__sec-menu > ul > li > a {
-  display: block;
-  margin-bottom: 20px;
-  color: #000;
-  font-size: 17px;
-}
-
-header .menu-box .menu-box__sec-menu > ul ul > li > a {
-  display: block;
-  margin-bottom: 24px;
-  color: #444;
-  font-size: 13px;
-}
-    /* 관련 사이트 */
-    /* 아이콘 버전 */
-    /* header .drop-down .drop-btn .ico {
-display: inline-block;
-margin-left: 5px;
-} */
-    /* 이미지 버전 */
-    header .drop-down .drop-btn::after {
-      content: "";
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-left: 10px;
-      background: url(../images/svg_line_arrow_down.svg);
-      background-size: 12px 12px;
-    }
-
-    header .drop-down .drop-btn {
-      border-radius: 40px;
-      background: rgba(244, 244, 244, 0.8);
-      color: rgba(68, 68, 68, 1);
-      border: 1px solid rgba(229, 229, 229, 0.8);
-      padding: 0 14px 0 18px;
-      margin: 0 28px 0 14px;
-      height: 40px;
-      font-size: 15px;
-      cursor: pointer;
-    }
-
-    /* --헤더 끝-- */
+   
   </style>
 </body>
 

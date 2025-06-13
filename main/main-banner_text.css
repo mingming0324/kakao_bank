@@ -1,0 +1,113 @@
+ /* 노말라이즈 */
+ body,
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ /* 노말라이즈 끝 */
+ /* 라이브러리 */
+ .border-red {
+   border: 5px solid red;
+ }
+
+ .border-blue {
+   border: 5px solid blue;
+ }
+
+ .border-black {
+   border: 5px solid #000;
+ }
+
+ .border-green {
+   border: 5px solid green;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ .flex-jc-c {
+   justify-content: center;
+ }
+
+ .flex-ai-c {
+   align-items: center;
+ }
+
+ .flex-as-c {
+   align-self: center;
+ }
+
+ .flex-grow-1 {
+   flex-grow: 1;
+ }
+
+ .block {
+   display: block;
+ }
+
+ .height-100p {
+   height: 100%;
+ }
+
+ .con {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1080px;
+ }
+
+ .img-box>img {
+  width: 100%;
+  display: block;
+}
+.con-min-width {
+  min-width: 1080px;
+}
+
+/* 메인 텍스트 시작 */
+.main-banner {
+  background-color: #ffef6b;
+padding:  100px;
+}
+
+
+.main-banner .text-box > h3 {
+  margin:  0;
+  font-size: 49px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.main-banner .text-box > p {
+  font-size: 16px;
+  line-height: 1.95;
+  opacity: .7;
+}
+
+.main-banner .text-box .btns {
+  margin-top:  50px;
+}
+
+.main-banner .text-box .btns > li:first-child {
+  padding-right:  12px;
+}
+.main-banner .text-box .btns  a {
+  display: block;
+  width:  178px;
+  height:  56px;
+  border:  1px solid rgba(255, 255, 255, .3);
+  border-radius: 12px;
+  font-size: 16.2px;
+  font-weight: bold;
+  line-height: 56px;
+  color: #333;
+  background-color: #fff;
+  text-align: center;
+}

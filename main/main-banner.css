@@ -1,0 +1,90 @@
+ /* 노말라이즈 */
+ body,
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ /* 노말라이즈 끝 */
+ /* 라이브러리 */
+ .border-red {
+   border: 5px solid red;
+ }
+
+ .border-blue {
+   border: 5px solid blue;
+ }
+
+ .border-black {
+   border: 5px solid #000;
+ }
+
+ .border-green {
+   border: 5px solid green;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ .flex-jc-c {
+   justify-content: center;
+ }
+
+ .flex-ai-c {
+   align-items: center;
+ }
+
+ .flex-as-c {
+   align-self: center;
+ }
+
+ .flex-grow-1 {
+   flex-grow: 1;
+ }
+
+ .block {
+   display: block;
+ }
+
+ .height-100p {
+   height: 100%;
+ }
+
+ .con {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1080px;
+ }
+
+ .img-box>img {
+  width: 100%;
+  display: block;
+}
+.con-min-width {
+  min-width: 1080px;
+}
+
+/* 메인 시작 */
+.main-banner {
+  position:  relative;
+}
+.main-banner .banner-img {
+  width:  1200px;
+}
+.main-banner .bg {
+  position:  absolute;
+  width:  100%;
+  top:  0;
+  left:  0;
+  height:  720px;
+  background-color: #ffef6b;
+  z-index: -1;
+}

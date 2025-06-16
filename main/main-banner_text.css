@@ -72,6 +72,14 @@
   min-width: 1080px;
 }
 
+.ico {
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(https://kakaobank.com/static/images/web/img_kabang_220615.png);
+}
+
 /* 메인 텍스트 시작 */
 .main-banner {
   background-color: #ffef6b;
@@ -92,14 +100,13 @@ padding:  100px;
 }
 
 .main-banner .text-box .btns {
-  margin-top:  50px;
+  margin-top:  50px; 
 }
 
 .main-banner .text-box .btns > li:first-child {
   padding-right:  12px;
 }
 .main-banner .text-box .btns  a {
-  display: block;
   width:  178px;
   height:  56px;
   border:  1px solid rgba(255, 255, 255, .3);
@@ -110,4 +117,23 @@ padding:  100px;
   color: #333;
   background-color: #fff;
   text-align: center;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-banner .text-box .btns  a:hover {
+  text-decoration:  underline;
+}
+
+.main-banner .text-box .btns  .ico {
+  margin-right: 10px;
+}
+
+.main-banner .text-box .btns  .ico-1 {
+  background-position: -341px -292px;
+}
+
+.main-banner .text-box .btns  .ico-2{
+  background-position: -371px -292px;
 }

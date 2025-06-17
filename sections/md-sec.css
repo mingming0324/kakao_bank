@@ -111,13 +111,6 @@ html {
   background-color: #f1f1f1;
 }
 
-/* 공통섹션 끝*/
-
-/* 섹션1 시작 */
-.md-sec .img-box {
-  width: 473px;
-}
-
 .md-sec .text-box h3 {
   font-size: 40px;
   line-height: 1.3;
@@ -147,11 +140,110 @@ html {
   justify-content: center;
 }
 
+.md-sec .text-box .btn-box > a:hover {
+  text-decoration: underline;
+}
+
 .md-sec .text-box .btn-box > a img {
   width: 6px;
   height: 9px;
   margin: 8px;
+
   vertical-align: top;
 }
+
+/* 공통섹션 끝*/
+
+/* 섹션1 시작 */
+.md-sec .img-box {
+  width: 473px;
+}
+
 /* 섹션1 끝 */
+
+/* 섹션2 시작 */
+.md-sec_2 > div:first-child {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.md-sec_2 > div:last-child {
+  width: 60%;
+}
+
+.md-sec_2 .text-box .text_img-box img {
+  width: 440px;
+  margin-top: 60px;
+}
+
+md-sec_2 .text-box .text_img-box img {
+  display: block;
+  width: 100%;
+}
+
+.md-sec_2 .img-box-2  {
+  width: 409px;
+  margin-left: 120px;
+}
+
+.md-sec_2 .img-box-2 img {
+  display: block;
+  width: 100%;
+}
+
+
+/* .md-sec_2 .text-box .btn-wrap {
+  display: flex;
+} */
+
+
+/* .md-sec_2 .text-box .btn-wrap .btn-box {
+  margin-right: 6px;
+} */
+
+.md-sec_2 .text-box .btn-box {
+  display: flex;
+}
+
+.md-sec_2 .text-box .btn-box > a {
+  width: 158px;
+}
+
+.md-sec_2 .text-box .btn-box > a:first-child {
+  margin-right: 6px;
+}
+/* 섹션2 끝 */
+
+/* 섹션3 시작 */
+.md-sec_3 .img-box {
+  width: 473px;
+}
+/* 섹션3 끝 */
+
+/* 섹션4 시작 */
+.md-sec_4 > div:first-child {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.md-sec_4 > div:last-child {
+  width: 60%;
+}
+.md-sec_4 .img-box {
+  width: 492px;
+}
+/* 섹션4끝 */
+
+/* 섹션5시작 */
+.md-sec_5 .img-box {
+  width: 408px;
+}
+.md-sec_5_wrap {
+  height: 750px;
+    background: #fff  url(../images/home_map.png) no-repeat -12% 50%
+}
+
+/* 섹션5끝 */
 /* 중간 섹션 1~5 끝 */

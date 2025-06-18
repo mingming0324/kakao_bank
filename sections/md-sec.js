@@ -1,15 +1,3 @@
-$(".drop-btn").click(function() {
-  $(".drop-down__content").toggleClass("is_active");
-  $(".drop-btn").toggleClass("is_active");
-});
-
-$("window").click(function(event) {
-  if (!$(event.target).closest(".drop-btn").lengh) {
-    $(".drop-down_content").removeClass("is_active");
-    $(".drop-btn").addClass("is_active");
-  }
-});
-
 /* 발견되면 활성화시키는 라이브러리 시작 */
 function ActiveOnVisible__init() {
   $('.active-on-visible').each(function(index, node) {

@@ -179,8 +179,7 @@ html {
 }
 
 .md-sec_2 > div:last-child {
-  width: 60%;
-  margin-left:  -10px;
+  margin-left:  -56px;
 }
 
 .md-sec_2 .text-box .text_img-box img {
@@ -188,14 +187,9 @@ html {
   margin-top: 60px;
 }
 
-md-sec_2 .text-box .text_img-box img {
-  display: block;
-  width: 100%;
-}
 
 .md-sec_2 .img-box-2  {
   width: 409px;
-  margin-left: 120px;
 }
 
 .md-sec_2 .img-box-2 img {
@@ -256,7 +250,7 @@ md-sec_2 .text-box .text_img-box img {
   margin-left: 128px;
 }
 .md-sec_4 > div:last-child {
-  margin-left:  -5px;
+  margin-right: 9px;
 }
 .md-sec_4 .img-box {
   width: 492px;

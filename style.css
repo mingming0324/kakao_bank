@@ -500,14 +500,16 @@ header .global-logo:hover img {
 .md-sec_2 .img-box-2 img {
   display: block;
   width: 100%;
+  visibility: hidden;
   transform: translateX(20%);
   opacity: 0;
-  transition: transform 1s, opacity 1s;
+  transition: all, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
 }
 
 
 .md-sec_2 .img-box-2.active img {
   transform: translateX(0);
+  visibility: visible;
   opacity: 1;
 }
 
@@ -574,6 +576,21 @@ header .global-logo:hover img {
 .md-sec_5 .img-box {
   width: 408px;
 }
+
+.md-sec_5 .img-box img {
+  transform: translateY(20%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+}
+
+
+.md-sec_5 .img-box.active img {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
 .md-sec_5_wrap {
   height: 750px;
     background: #fff  url(../images/home_map.png) no-repeat -12% 50%

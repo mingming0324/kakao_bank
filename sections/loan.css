@@ -87,10 +87,13 @@ a {
 .loan-box {
   background-color: #333b58;
   position: relative;
-
   /* 임시 */
   height: 500px;
-  z-index: 0;
+  margin-top: 1000px;
+}
+
+.loan-box .con {
+  position: relative;
 }
 
 .loan-box > .sky {
@@ -99,7 +102,6 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .loan-box > .sky > .blue {
@@ -112,8 +114,12 @@ a {
   transition: height .85s;
 }
 
-.loan-box:hover > .sky > .blue {
+.loan-box.active  > .sky > .blue{
   height: 0;
 }
+
+/* .loan-box:hover > .sky > .blue {
+  height: 0;
+} */
 
 /* 대출 끝 */

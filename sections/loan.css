@@ -89,7 +89,6 @@ a {
   position: relative;
   /* 임시 */
   height: 500px;
-  margin-top: 1000px;
 }
 
 .loan-box .con {
@@ -121,5 +120,44 @@ a {
 /* .loan-box:hover > .sky > .blue {
   height: 0;
 } */
+
+.loan-box  > .sky >  .moon {
+  width: 112px;
+  height: 112px;
+  position: absolute;
+  top: 205px;
+  left: calc(50% + 282px);
+overflow: hidden;
+}
+
+.loan-box  > .sky >  .moon > .base {
+  width: 110px;
+  height: 110px;
+  background-color: #ffdc00;
+  border-radius: 50%;
+  transition: background-color .85s ;
+}
+
+.loan-box.active  > .sky >  .moon > .base {
+  background-color: #fff;
+}
+
+.loan-box  > .sky >  .moon > .shadow {
+  width: 100%;
+  height: 100%;
+  background-color: #333b58;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  border-radius: 50%;
+  transition: top .85s .2s, left .85s .2s;
+}
+
+.loan-box.active  > .sky >  .moon > .shadow {
+top: -22%;
+ left: -22%;
+}
+
+/* 별 시작 */
 
 /* 대출 끝 */

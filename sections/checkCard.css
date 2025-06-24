@@ -1,0 +1,136 @@
+ /* 노말라이즈 */
+ body,
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ /* 노말라이즈 끝 */
+ /* 라이브러리 */
+ .border-red {
+   border: 5px solid red;
+ }
+
+ .border-blue {
+   border: 5px solid blue;
+ }
+
+ .border-black {
+   border: 5px solid #000;
+ }
+
+ .border-green {
+   border: 5px solid green;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ .flex-jc-c {
+   justify-content: center;
+ }
+
+ .flex-ai-c {
+   align-items: center;
+ }
+
+ .flex-as-c {
+   align-self: center;
+ }
+
+ .flex-grow-1 {
+   flex-grow: 1;
+ }
+
+ .block {
+   display: block;
+ }
+
+ .height-100p {
+   height: 100%;
+ }
+
+ .con {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1080px;
+ }
+
+ .img-box>img {
+  width: 100%;
+  display: block;
+}
+.con-min-width {
+  min-width: 1080px;
+}
+
+.ico {
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(https://kakaobank.com/static/images/web/img_kabang_220615.png);
+}
+
+.img-box>img {
+  width: 100%;
+  display: block;
+}
+
+
+/* 체크카드 시작 */
+.checkCard-box {
+  padding-top: 150px;
+}
+.checkCard-box .con > h3 {
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.checkCard-box .con > p {
+  font-size: 15px;
+  margin-top: 24px;
+  line-height: 1.7;
+  color: #666;
+  text-align: center;
+}
+
+.checkCard-box .con >.btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.checkCard-box .con > .btn-box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 258px;
+  height: 56px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+  line-height: 56px;
+}
+.checkCard-box .con > .btn-box :hover > a {
+  text-decoration: underline;
+}
+.checkCard-box .con > .btn-box > a > img {
+  display: block;
+  width: 6px;
+  height: 9px;
+  margin: 3px 0 0 8px;
+}
+
+
+/* 체크카드 끝 */

@@ -126,6 +126,7 @@
 .checkCard-box .con > .btn-box :hover {
   text-decoration: underline;
 }
+
 .checkCard-box .con > .btn-box > a > img {
   display: block;
   width: 6px;
@@ -135,43 +136,38 @@
 
 .checkCard-box .slider-box {
   position: relative;
+  width: 660px;
+  margin: 80px auto 0 auto;
 }
 
-.checkCard-box .slider-box .slides {
-  display: flex;
-  justify-content: center;
+.checkCard-box .slider-box .slick  .item > .img-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.checkCard-box .slider-box .slides > div >img {
-  width: 240px;
-  display: block;
+.checkCard-box .slider-box .slick  .item.slick-center {
+  transform: scale(1.3);
 }
 
-.checkCard-box .slider-box .slides > div.center {
-  position: relative;
-  margin-left: -80px;
-  margin-right: -80px;
-  z-index: 1;
-}
-
-.checkCard-box .slider-box .slides > div.center > img {
-  transform: scale(1.2);
-}
 
 .checkCard-box .slider-box .arrows div {
   position: absolute;
   top: 50%;
-  left: 30px;
+  right: calc(100% + 150px);
   transform: translateY(-50%);
 }
 
 .checkCard-box .slider-box .arrows div:last-child {
   left: auto;
   right: 30px;
+  left: calc(100% + 150px);
 }
 
 .checkCard-box .slider-box .arrows div:active {
   transform: translatey(-45%);
   cursor: pointer;
-}
+}  
+  /* 구조잡기 */
+
+
 /* 체크카드 끝 */

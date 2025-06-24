@@ -127,3 +127,22 @@ $(function() {
   ActiveOnVisible__init();
 })
 /* 발견되면 활성화시키는 라이브러리 끝 */
+
+// 체크카드 슬릭 슬라이드 
+function SliderBox1__init() {
+  $('.slider-box > .slick').slick({
+    dots:false,
+    autoplay: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode:true,
+    centerPadding:0,
+    arrows:true,
+    prevArrow: ".slider-box > .arrows > .btn-arrow_left",
+    nextArrow: ".slider-box > .arrows > .btn-arrow_right"
+  });
+}
+
+SliderBox1__init();
+
+// 체크카드 슬릭 슬라이드  끝

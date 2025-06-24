@@ -94,6 +94,7 @@
   font-size: 40px;
   line-height: 1.35;
   text-align: center;
+  margin: 0;
 }
 
 .checkCard-box .con > p {
@@ -122,7 +123,7 @@
   font-size: 16px;
   line-height: 56px;
 }
-.checkCard-box .con > .btn-box :hover > a {
+.checkCard-box .con > .btn-box :hover {
   text-decoration: underline;
 }
 .checkCard-box .con > .btn-box > a > img {
@@ -132,5 +133,45 @@
   margin: 3px 0 0 8px;
 }
 
+.checkCard-box .slider-box {
+  position: relative;
+}
 
+.checkCard-box .slider-box .slides {
+  display: flex;
+  justify-content: center;
+}
+
+.checkCard-box .slider-box .slides > div >img {
+  width: 240px;
+  display: block;
+}
+
+.checkCard-box .slider-box .slides > div.center {
+  position: relative;
+  margin-left: -80px;
+  margin-right: -80px;
+  z-index: 1;
+}
+
+.checkCard-box .slider-box .slides > div.center > img {
+  transform: scale(1.2);
+}
+
+.checkCard-box .slider-box .arrows div {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.checkCard-box .slider-box .arrows div:last-child {
+  left: auto;
+  right: 30px;
+}
+
+.checkCard-box .slider-box .arrows div:active {
+  transform: translatey(-45%);
+  cursor: pointer;
+}
 /* 체크카드 끝 */

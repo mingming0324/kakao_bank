@@ -1,0 +1,149 @@
+ /* 노말라이즈 */
+ body,
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ /* 노말라이즈 끝 */
+ /* 라이브러리 */
+ .border-red {
+   border: 5px solid red;
+ }
+
+ .border-blue {
+   border: 5px solid blue;
+ }
+
+ .border-black {
+   border: 5px solid #000;
+ }
+
+ .border-green {
+   border: 5px solid green;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ .flex-jc-c {
+   justify-content: center;
+ }
+
+ .flex-ai-c {
+   align-items: center;
+ }
+
+ .flex-as-c {
+   align-self: center;
+ }
+
+ .flex-grow-1 {
+   flex-grow: 1;
+ }
+
+ .block {
+   display: block;
+ }
+
+ .height-100p {
+   height: 100%;
+ }
+
+ .con {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1080px;
+ }
+
+ .img-box>img {
+  width: 100%;
+  display: block;
+}
+.con-min-width {
+  min-width: 1080px;
+}
+
+.ico {
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(https://kakaobank.com/static/images/web/img_kabang_220615.png);
+}
+
+.img-box>img {
+  width: 100%;
+  display: block;
+}
+
+/* it 기술박스 시작 */
+.itskill-box {  
+  background-color: #f9f9f9;
+  padding-top: 160px;
+  padding-bottom: 230px;
+}
+
+.itskill-box h3 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+}
+.itskill-box .divider {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin: 50px auto 140px;
+}
+
+.itskill-box .text-box .bg-divider {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  left: 0;
+  /* top: 583px */
+  transform: translateY(122px);
+}
+
+.itskill-box .text-box .bg-divide .img-box {
+  position: relative;
+}
+
+.itskill-box .text-box .img-box,
+.itskill-box .text-box  ul {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.itskill-box .text-box ul {
+  
+}
+
+.itskill-box .text-box ul li {
+  text-align: center;
+  width: 25%;
+  height: 210px;
+}
+
+.itskill-box .text-box ul li strong {
+  display: block;
+  font-size: 19px;
+  margin: 45px 0 17px
+}
+
+.itskill-box .text-box ul li p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+/* it 기술박스 끝 */

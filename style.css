@@ -1003,7 +1003,7 @@ margin: 0;
 .itskill-box {  
   background-color: #f9f9f9;
   padding-top: 160px;
-  padding-bottom: 230px;
+  padding-bottom: 130px;
 }
 
 .itskill-box h3 {
@@ -1058,3 +1058,191 @@ margin: 0;
   color: #666;
 }
 /* it 기술박스 끝 */
+
+/* 푸터 시작 */
+footer {
+  background-color: #eee;
+  margin: 0 auto;
+}
+footer .con {
+  padding: 0 20px;
+}
+footer .box-1 {
+  padding: 20px 0 16px;
+  color: #666;
+  font-size: 11px;
+}
+
+footer .box-1 .menu-box > ul > li {
+  display: inline-block;
+  padding: 4px 10px;
+  position: relative; 
+}
+
+footer .box-1 .menu-box > ul > li:hover {
+  text-decoration: underline;
+}
+footer .box-1 .menu-box > ul > li:not(:first-child):after {
+  content: "";
+  background-color: #d8d8d8;
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+
+}
+
+footer .box-1 .menu-box > ul > li:first-child {
+  padding-left: 0;
+}
+
+footer .box-1 .menu-box > ul > li.pd {
+  margin-left: 15px;
+}
+
+footer .box-1 .menu-box > ul > .bold {
+  font-weight: bold;
+  color: #000;
+}
+
+footer .box-2 .address {
+  color: #888;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.5;
+}
+footer .box-2 .address p {
+  margin: 0;
+  padding-bottom: 6px;
+}
+footer .box-2 .address  span {
+  color: #000;
+  padding: 0 6px 0;
+}
+
+footer .box-2 .address .info {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+footer .box-3 {
+padding: 12px 0 18px;
+display: flex;
+justify-content: space-between;
+}
+
+footer .box-3 .wep-box {
+  display: flex;
+}
+
+footer .box-3 .wep-box li:first-child {
+  margin-top: 3px;
+}
+
+footer .box-3 .wep-box  a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ grid-column-gap: 8px;
+ font-size: 13px;
+ font-weight: 600;
+ color: #666;
+}
+
+footer .box-3 .wep-box li:first-child img {
+  width: 46px;
+  display: block;
+}
+
+footer .box-3 .wep-box li:last-child img {
+  width: 42px;
+  display: block;
+}
+footer .box-3 .wep-box  li:last-child {
+  margin-left: 20px;
+}
+
+footer .box-3 .sns {
+  display: flex;
+}
+
+footer .box-3 .sns li {
+  display: block;
+  overflow: hidden;
+ 
+  background-position: 0 -90px;
+}
+
+footer .box-3 .sns {
+  overflow: hidden;
+    float: right;
+    margin-top: 5px;
+    margin-right: 34px;
+}
+
+footer .box-3 .sns .facebook {
+  margin: 2px 0 2px 13px;
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .facebook > span {
+  display: block;
+  background: url(./images/ico_sns.png) no-repeat; 
+  background-position: 0 -90px;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .insta {
+  margin: 2px 0 2px 4px;
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .insta > span {
+  display: block;
+  background: url(./images/ico_sns.png) no-repeat; 
+  background-position: -191px -138px;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .youtube {
+  margin: 2px 0 2px 13px;
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .youtube > span {
+  display: block;
+  background: url(./images/ico_sns.png) no-repeat; 
+  background-position: -90px -90px;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .brunch {
+  margin: 2px 0 2px 13px;
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+footer .box-3 .sns .brunch > span {
+  display: block;
+  background: url(./images/ico_sns.png) no-repeat; 
+  background-position: -217px -138px;
+  width: 24px;
+  height: 24px;
+}
+/* 푸터 끝 */

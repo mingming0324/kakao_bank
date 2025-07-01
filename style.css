@@ -1,3 +1,10 @@
+@font-face {
+  font-family:  "KopubWorld Dotum", Sans-serif;
+  src: url('./KopubWorld_TTF/KoPubWorld_Dotum_Medium.ttf') format('ttf');
+  font-weight: Medium;
+  font-style: Medium;
+}
+
  /* 노말라이즈 */
 body,
 ul,
@@ -84,8 +91,6 @@ a {
   width: 100%;
   display: block;
 }
-
-/* 커스텀 */
 .con-min-width {
   min-width: 1080px;
 }
@@ -93,6 +98,11 @@ a {
 .con {
   width: 1080px;
 }
+/* 커스텀 */
+body {
+  font-family: "KopubWorld Dotum", Sans-serif;
+}
+
 
 html {
   /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */

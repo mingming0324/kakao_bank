@@ -1,3 +1,10 @@
+@font-face {
+  font-family:  "KopubWorld Dotum", Sans-serif;
+  src: url('../KopubWorld_TTF/KoPubWorld_Dotum_Medium.ttf') format('ttf');
+  font-weight: Medium;
+  font-style: Medium;
+}
+ 
  /* 노말라이즈 */
  body,
  ul,
@@ -85,6 +92,10 @@
   display: block;
 }
 
+
+body {
+  font-family:  "KopubWorld Dotum", Sans-serif;
+}
 /* 푸터 시작 */
 footer {
   background-color: #eee;
@@ -173,7 +184,7 @@ footer .box-3 .wep-box  a {
   display: flex;
   justify-content: center;
   align-items: center;
- grid-column-gap: 8px;
+  gap: 8px;
  font-size: 13px;
  font-weight: 600;
  color: #666;

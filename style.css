@@ -128,6 +128,17 @@ header>.logo-wrap>a {
   width: 116px;
 }
 
+header>.logo-wrap {
+  visibility: visible;
+  opacity: 1;
+  transition:  visibility 1s, opacity .3s;
+}
+
+header>.logo-wrap.is_scroll {
+  visibility: hidden;
+  opacity: 0;
+}
+
 header>.logo-wrap>a>img {
   width: 100%;
 }

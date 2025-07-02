@@ -1,4 +1,20 @@
 // 헤더 메뉴
+function logoshowAndHide() {
+  $(window).scroll(function() {
+    let $this = $(this) ;
+    let scTop = $this.scrollTop();
+
+    if (scTop > 0 ) {
+      $(".logo-wrap").addClass("is_scroll");
+    }
+    else {
+      $(".logo-wrap").removeClass("is_scroll");
+    }
+  });
+}
+
+logoshowAndHide();
+
 $(".drop-btn").click(function() {
   $(".drop-down__content").toggleClass("is_active");
   $(".drop-btn").toggleClass("is_active");
@@ -10,6 +26,7 @@ $("window").click(function(event) {
     $(".drop-btn").addClass("is_active");
   }
 });
+// 헤더메뉴 끝
 
 /* 발견되면 활성화시키는 라이브러리 시작 */
 function ActiveOnVisible__init() {
